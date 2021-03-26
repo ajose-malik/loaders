@@ -116,3 +116,45 @@ body {
 .bounce li:nth-of-type(5) {
 	animation-delay: 0.75s;
 }
+
+/* square-up */
+.square-up {
+	width: 50px;
+	height: 50px;
+	animation: square-up 1.3s linear infinite;
+}
+
+@keyframes square-up {
+	0% {
+		position: relative;
+		top: -50px;
+		left: -50px;
+		background-color: #827717;
+		transform: rotateX(180deg) rotateY(360deg);
+	}
+
+	25% {
+		position: relative;
+		top: -50px;
+		left: 50px;
+		background-color: #9e9d24;
+	}
+	50% {
+		position: relative;
+		top: 50px;
+		left: 50px;
+		background-color: #827717;
+	}
+	75% {
+		position: relative;
+		top: 50px;
+		left: -50px;
+		background-color: #9e9d24;
+	}
+	100% {
+		position: relative;
+		top: -50px;
+		left: -50px;
+		background-color: #827717;
+	}
+}
